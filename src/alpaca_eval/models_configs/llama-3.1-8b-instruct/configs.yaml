@@ -1,13 +1,13 @@
-llama-2-7b-chat-hf:
-  prompt_template: "llama-2-7b-chat-hf/prompt.txt"
+llama-3.1-8b-instruct:
+  prompt_template: "llama-3.1-8b-instruct/prompt.txt"
   fn_completions: "huggingface_local_completions"
   completions_kwargs:
-    model_name: "<finetuned llama-2 hf path>"
+    model_name: "<hf path to your llama-3.1 finetune>"
     model_kwargs:
       torch_dtype: 'float16'
     max_new_tokens: 2048
     temperature: 0.7
     top_p: 1.0
     do_sample: True
-  pretty_name: "LLaMA2 Chat"
+  pretty_name: "LLaMA3.1 Chat"
   link: "https://ai.meta.com/llama/"
